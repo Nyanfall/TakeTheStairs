@@ -7,6 +7,7 @@ public class MouseLook : MonoBehaviour
     // Start is called before the first frame update
     public float mouseSensetivity = 100f;
     public Transform playerBody;
+    public float rayRange = 3f;
     private float xRotation = 0f;
     void Start()
     {
@@ -22,5 +23,21 @@ public class MouseLook : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
+        CastRay();
+    }
+
+    void CastRay()
+    {
+         RaycastHit hitInfo = new RaycastHit();
+         bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo, rayRange);
+         if (hit)
+         {
+             GameObject hitObject = hitInfo.transform.gameObject;
+             if (Input.GetKeyDown(KeyCode.E))
+             {
+                 hitObject.GetComponent<IInteractable>().Interact();
+             }
+         }
+
     }
 }
