@@ -17,11 +17,11 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/../.gitignore" />
-      <option value="$PROJECT_DIR$/../TODO" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SelectionManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/InteractSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/InteractableObj.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MouseLook.cs" />
+      <option value="$PROJECT_DIR$/../TODO" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zyEvtzl8yufpXK6f8HtjkJm6gC" />
@@ -80,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635112162117</updated>
       <workItem from="1635112169100" duration="1537000" />
-      <workItem from="1635537579686" duration="4224000" />
+      <workItem from="1635537579686" duration="4876000" />
     </task>
     <servers />
   </component>

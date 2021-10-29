@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
     public CharacterController controller;
     public float speed = 8f;
     public float gravity = -9.81f;
@@ -14,8 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundMask;
     private Vector3 velocity;
     private bool isGrounded;
-
-    // Update is called once per frame
+    
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
