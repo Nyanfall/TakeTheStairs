@@ -24,17 +24,17 @@ public class ElevatorMovement : MonoBehaviour
    {
       _destination = destination;
       if (running) return;
-      StartCoroutine(MoveElevator(onGroundFloor));
+      StartCoroutine(MoveElevator(onGroundFloor)); // error is somewhere here, rework onGroundFloor Logic to array of floors
    }
    private void Awake()
    {
       startPositon = transform.position;
       endPosition = startPositon + new Vector3(0,_destination.y,0); // Make here from current position
    }
-   private IEnumerator MoveElevator(bool onGroundCheck)
+   private IEnumerator MoveElevator(bool onGroundCheck) //re-do path choosing here
    {
-      Vector3 start = onGroundCheck ? startPositon : endPosition;
-      Vector3 end = onGroundCheck ? endPosition : startPositon;
+      Vector3 start = onGroundCheck ? startPositon : endPosition; //make new conditions
+      Vector3 end = onGroundCheck ? endPosition : startPositon; //make new conditions
       
       running = true;
 
@@ -44,7 +44,7 @@ public class ElevatorMovement : MonoBehaviour
       }, () =>
       {
          running = false;
-         onGroundFloor = !onGroundFloor;
+         onGroundFloor = !onGroundFloor; //switch states here somehow.
       });
    }
 }

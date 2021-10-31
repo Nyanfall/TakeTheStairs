@@ -11,17 +11,31 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/InteractableObj.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/State/SequenceState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Window/PlaybackScroller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Slider/SliderTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/InteractSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AD3EAA08-78D9-4CBE-8E45-F9C494D71647/22/4ad02088/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/treeview/ItemGui/TimelineClipGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_DefaultControls.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Runtime/TrackAsset.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Image/ImageFilledGenerateWork.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Editor/RectMask2D/RectMask2DCulling.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AD3EAA08-78D9-4CBE-8E45-F9C494D71647/42/87d1a033/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/LayoutElementEditor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/../.gitignore" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SelectionManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/InteractSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/InteractableObj.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/MouseLook.cs" />
       <option value="$PROJECT_DIR$/../TODO" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/InteractSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Elevator/ElevatorMove.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Elevator/OutdoorInteractableButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/MouseLook.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Elevator/InteractableButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Elevator/ElevatorMovement.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zyEvtzl8yufpXK6f8HtjkJm6gC" />
@@ -81,6 +95,7 @@
       <updated>1635112162117</updated>
       <workItem from="1635112169100" duration="1537000" />
       <workItem from="1635537579686" duration="4876000" />
+      <workItem from="1635702011480" duration="10703000" />
     </task>
     <servers />
   </component>
