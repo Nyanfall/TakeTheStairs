@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class MouseLook : MonoBehaviour
@@ -36,9 +37,10 @@ public class MouseLook : MonoBehaviour
              GameObject hitObject = hitInfo.transform.gameObject;
              if (Input.GetKeyDown(KeyCode.E))
              {
-                 if (hitObject.TryGetComponent<IInteractable>(out IInteractable interactable))
-                 {
-                     hitObject.GetComponent<IInteractable>().Interact();
+                 hitObject.TryGetComponent(out IInteractable objectInteract);
+                 if (objectInteract != null)
+                 { 
+                     objectInteract.Interact();
                  }
              }
          }
