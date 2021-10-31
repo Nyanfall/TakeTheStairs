@@ -10,6 +10,7 @@ public class ElevatorMovement : MonoBehaviour
    
    private Vector3 endPosition; 
    private Vector3 startPositon;
+   
    private Vector3 _destination;
 
    public float destinationHeight;
