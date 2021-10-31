@@ -6,7 +6,7 @@ public class MouseLook : MonoBehaviour
 {
     public float mouseSensetivity = 100f;
     public Transform playerBody;
-    public float rayRange = 3f;
+    public float rayRange = 5f;
     private float xRotation = 0f;
     void Start()
     {
@@ -36,7 +36,10 @@ public class MouseLook : MonoBehaviour
              GameObject hitObject = hitInfo.transform.gameObject;
              if (Input.GetKeyDown(KeyCode.E))
              {
-                 hitObject.GetComponent<IInteractable>().Interact();
+                 if (hitObject.TryGetComponent<IInteractable>(out IInteractable interactable))
+                 {
+                     hitObject.GetComponent<IInteractable>().Interact();
+                 }
              }
          }
 
