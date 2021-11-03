@@ -6,57 +6,57 @@ using UnityEngine;
 using SloanKelly.GameLib; //random dude coroutine library 
 public class ElevatorMovement : MonoBehaviour
 {
-   // private bool onGroundFloor = true;
-
-   //
-   // private Vector3 endPosition; 
-   // private Vector3 startPositon;
-   //
-   // private Vector3 _destination;
-   //
-   // public float destinationHeight;
-   
-   public float elevatorMoveDuration = 3f;
+   public float elevatorMoveDuration = 5f;
    public float elevatorWaitDelay = 1.5f;
 
    public int maxFloors = 4;
+   
    public List <GameObject> destinations = new List<GameObject>();
+
+   private Vector3 fisrtFloorPosition;
+   private Vector3 currentPositon;
    private GameObject destination;
    
    private bool running;
 
-   public void ButtonIsPressed(GameObject _destination)
+   public void Awake()
+   {
+      fisrtFloorPosition = transform.position;
+      currentPositon = fisrtFloorPosition;
+   }
+
+   public void ButtonIsPressed(GameObject _destination, int floor)
    {
       if (!destinations.Contains(_destination))
       {
          destinations.Add(_destination);
-         Debug.Log(_destination.name + " added to array of floors");
+         //Debug.Log(_destination.name + " added to array of floors");
       }
-      destination = _destination;
       MoveElevator();
    }
-   
 
-   public void MoveElevator()
+   public void MoveElevator() //move elevator here, remove destination from array
    {
-      //if (running) return;
-      //StartCoroutine(MoveElevator(buttonsPressed)); // error is somewhere here, rework onGroundFloor Logic to array of floors
+      if (running) return;
+      destination = destinations.First();
+      StartCoroutine(MoveElevator(destination));
    }
-   
-   /*private IEnumerator MoveElevator(GameObject[] buttonsPressed) //re-do path choosing here
+
+   private IEnumerator MoveElevator(GameObject _destination) //re-do path choosing here
    {
-     //Vector3 start = onGroundCheck ? startPositon : endPosition; //make new conditions
-      //Vector3 end = onGroundCheck ? endPosition : startPositon; //make new conditions
-      
       running = true;
 
+      Vector3 start = new Vector3(fisrtFloorPosition.x, currentPositon.y, fisrtFloorPosition.z);
+      Vector3 end = new Vector3(fisrtFloorPosition.x, _destination.transform.position.y, fisrtFloorPosition.z);
+      
       return CoroutineFactory.Create(elevatorMoveDuration, time =>
-      {
-        // transform.position = Vector3.Lerp(start, end, time);
+      { 
+        transform.position = Vector3.Lerp(start, end, time);
       }, () =>
       {
+         destinations.Remove(_destination);
          running = false;
-         
+         currentPositon = new Vector3(fisrtFloorPosition.x,_destination.transform.position.y,fisrtFloorPosition.z);
       });
-   }*/
+   }
 }

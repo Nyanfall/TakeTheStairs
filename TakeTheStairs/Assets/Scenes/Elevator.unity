@@ -740,6 +740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationPoint: {fileID: 136663991}
   ElevatorMovement: {fileID: 1778351628}
+  floor: 2
 --- !u!65 &537790217
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1098,6 +1099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationPoint: {fileID: 1098542670}
   ElevatorMovement: {fileID: 1778351628}
+  floor: 1
 --- !u!65 &847383030
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1583,6 +1585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationPoint: {fileID: 1634102753}
   ElevatorMovement: {fileID: 1778351628}
+  floor: 3
 --- !u!65 &1233010185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1620,6 +1623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationPoint: {fileID: 1098542670}
   ElevatorMovement: {fileID: 1778351628}
+  floor: 1
 --- !u!65 &1267510310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1748,6 +1752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationPoint: {fileID: 710259954}
   ElevatorMovement: {fileID: 1778351628}
+  floor: 4
 --- !u!65 &1464706326
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1785,6 +1790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationPoint: {fileID: 710259954}
   ElevatorMovement: {fileID: 1778351628}
+  floor: 4
 --- !u!65 &1565483229
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2017,6 +2023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationPoint: {fileID: 136663991}
   ElevatorMovement: {fileID: 1778351628}
+  floor: 2
 --- !u!65 &1685676463
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2150,7 +2157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c6c818dd44696543a4feb3aa248b788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elevatorMoveDuration: 3
+  elevatorMoveDuration: 5
   elevatorWaitDelay: 1.5
   maxFloors: 4
   destinations: []
@@ -2542,8 +2549,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e76fbc1f48439e54bb7db2f7691861e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinationPoint: {fileID: 2102991768}
+  destinationPoint: {fileID: 1634102753}
   ElevatorMovement: {fileID: 1778351628}
+  floor: 3
 --- !u!65 &2102991770
 BoxCollider:
   m_ObjectHideFlags: 0

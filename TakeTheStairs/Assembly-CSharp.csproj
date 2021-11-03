@@ -52,6 +52,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Elevator\ParentToTheElevator.cs" />
      <Compile Include="Assets\Scripts\SloanKelly\SimpleScriptable.cs" />
      <Compile Include="Assets\Scripts\SloanKelly\ScriptableBehaviour.cs" />
      <Compile Include="Assets\Scripts\Player\InteractSystem.cs" />
@@ -61,7 +62,6 @@
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\SloanKelly\CoroutineFactory.cs" />
      <Compile Include="Assets\Scripts\Elevator\InteractableButton.cs" />
-     <Compile Include="Assets\Scripts\Elevator\ParentToTheElevator.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

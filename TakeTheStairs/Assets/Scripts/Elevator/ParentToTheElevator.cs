@@ -9,13 +9,13 @@ public class ParentToTheElevator : MonoBehaviour
     public GameObject player;
     public void OnTriggerEnter(Collider other)
     {
-         Debug.Log("Entered to the elevator");
+         //Debug.Log("Entered to the elevator");
          player.transform.SetParent(parentObject);
         
     } 
     public void OnTriggerExit(Collider other)
     {
-         Debug.Log("Exited from the elevator");
+         //Debug.Log("Exited from the elevator");
          player.transform.SetParent(null);
         
     }
