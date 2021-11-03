@@ -16,7 +16,7 @@ namespace SloanKelly.GameLib
         /// <param name="action">Action to be performed each tick</param>
         /// <param name="postCondition">Post-condition action to be performed</param>
         /// <returns></returns>
-        public static IEnumerator Create(float duration, Action<float> action, Action postCondition = null)
+        public static IEnumerator Create(float duration, float delayToNext, Action<float> action, Action postCondition = null)
         {
             float time = 0f;
 
@@ -32,6 +32,7 @@ namespace SloanKelly.GameLib
 
             if (postCondition != null)
             {
+                yield return new WaitForSeconds (delayToNext);
                 postCondition();
             }
         }

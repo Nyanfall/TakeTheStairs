@@ -8,14 +8,12 @@ public class InteractableButton : MonoBehaviour, IInteractable
 {
     public GameObject destinationPoint;
     public ElevatorMovement ElevatorMovement;
-    public int floor;
-    
     public void Interact()
     {
         //Debug.Log("Button " + destinationPoint.name + " is used");
 
         //gameObject.GetComponent<Renderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
-        ElevatorMovement.ButtonIsPressed(destinationPoint, floor);
+        ElevatorMovement.ButtonIsPressed(destinationPoint);
         
     }
 }

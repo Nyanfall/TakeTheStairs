@@ -1,14 +1,14 @@
 character control -- check. 
 interact system -- check.
-stairs model -- check
-elevator outdoor buttons -- check 
-elevator indoor buttons -- check
-elevator movement -- check
+stairs model -- check.
+elevator outdoor buttons -- check. 
+elevator indoor buttons -- check.
+elevator movement -- check.
 elevator ez setup -- ?
-add if floor where in list - stop here --
-bug -- fix "if (running) return;"
+add if floor exist in list - stop here -- ?
+fix bug "if (running) return;" -- check.
 _______
 polish:
 add second 3D model --
-time of movement should be multiply by the amount of floors traveled. -- 
-doors and wait for doors system --
+time of movement should be multiply by the amount of floors traveled -- check.
+doors and wait for doors system -- ?
