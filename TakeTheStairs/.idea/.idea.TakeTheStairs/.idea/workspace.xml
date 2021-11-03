@@ -48,9 +48,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MouseLook.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Elevator/ParentToTheElevator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Elevator/InteractableButton.cs" />
-      <option value="$PROJECT_DIR$/../TODO" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Elevator/ElevatorMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SloanKelly/CoroutineFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Elevator/ElevatorMovement.cs" />
+      <option value="$PROJECT_DIR$/../TODO" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zyEvtzl8yufpXK6f8HtjkJm6gC" />
@@ -112,7 +112,7 @@
       <workItem from="1635537579686" duration="4876000" />
       <workItem from="1635702011480" duration="10703000" />
       <workItem from="1635873118134" duration="10810000" />
-      <workItem from="1635936244522" duration="22194000" />
+      <workItem from="1635936244522" duration="30277000" />
     </task>
     <servers />
   </component>

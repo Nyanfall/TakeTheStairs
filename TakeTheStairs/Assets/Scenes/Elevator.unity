@@ -198,6 +198,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72535665}
   m_CullTransparentMesh: 1
+--- !u!1 &74159678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6133370041314516163, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+  m_PrefabInstance: {fileID: 2835744872853598333}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &136663991
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,6 +758,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01597207, y: 0.06, z: 0.06}
   m_Center: {x: -0.007986035, y: 0, z: 0.01}
+--- !u!1 &585703477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6683158261108674579, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+  m_PrefabInstance: {fileID: 2835744872853598333}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &661416123
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,6 +2617,26 @@ PrefabInstance:
       propertyPath: destinationPoint
       value: 
       objectReference: {fileID: 136663991}
+    - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: waitDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: doors.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: move1FloorDuration
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: doors.Array.data[0]
+      value: 
+      objectReference: {fileID: 74159678}
+    - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: doors.Array.data[1]
+      value: 
+      objectReference: {fileID: 585703477}
     - target: {fileID: 2102991769, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
       propertyPath: destinationPoint
       value: 
@@ -2663,5 +2693,13 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 449606311}
+    - target: {fileID: 7697408470357164364, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: Priority
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 7697408470357164364, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
