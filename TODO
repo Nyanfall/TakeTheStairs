@@ -4,11 +4,11 @@ stairs model -- check.
 elevator outdoor buttons -- check. 
 elevator indoor buttons -- check.
 elevator movement -- check.
-elevator ez setup -- ?
+elevator ez setup -- ? almost check.
 add if floor exist in list - stop here -- skipped. (need re-do everything, sry)
 fix bug "if (running) return;" -- check.
 _______
 polish:
-add second 3D model and make setup video --
+add second 3D model and make setup video -- check.
 time of movement should be multiply by the amount of floors traveled -- check.
 doors and wait for doors system -- crutch. 
