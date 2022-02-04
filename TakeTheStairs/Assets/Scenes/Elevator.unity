@@ -198,11 +198,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72535665}
   m_CullTransparentMesh: 1
---- !u!1 &74159678 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6133370041314516163, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
-  m_PrefabInstance: {fileID: 2835744872853598333}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &136663991
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,11 +670,11 @@ PrefabInstance:
     - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
       propertyPath: doors.Array.data[0]
       value: 
-      objectReference: {fileID: 425087156}
+      objectReference: {fileID: 0}
     - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
       propertyPath: doors.Array.data[1]
       value: 
-      objectReference: {fileID: 425087155}
+      objectReference: {fileID: 0}
     - target: {fileID: 2102991769, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
       propertyPath: destinationPoint
       value: 
@@ -745,16 +740,6 @@ PrefabInstance:
 --- !u!4 &425087154 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2835744871109190607, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
-  m_PrefabInstance: {fileID: 425087153}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &425087155 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6683158261108674579, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
-  m_PrefabInstance: {fileID: 425087153}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &425087156 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6133370041314516163, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
   m_PrefabInstance: {fileID: 425087153}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &425087157 stripped
@@ -953,11 +938,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01597207, y: 0.06, z: 0.06}
   m_Center: {x: -0.007986035, y: 0, z: 0.01}
---- !u!1 &585703477 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6683158261108674579, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
-  m_PrefabInstance: {fileID: 2835744872853598333}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &629351191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,7 +1804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e02cfcb88033c3429e91eb13a8251f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensetivity: 150
+  mouseSensetivity: 300
   playerBody: {fileID: 449606313}
   rayRange: 5
 --- !u!1 &990130245
@@ -4114,11 +4094,11 @@ PrefabInstance:
     - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
       propertyPath: doors.Array.data[0]
       value: 
-      objectReference: {fileID: 74159678}
+      objectReference: {fileID: 0}
     - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
       propertyPath: doors.Array.data[1]
       value: 
-      objectReference: {fileID: 585703477}
+      objectReference: {fileID: 0}
     - target: {fileID: 2102991769, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
       propertyPath: destinationPoint
       value: 

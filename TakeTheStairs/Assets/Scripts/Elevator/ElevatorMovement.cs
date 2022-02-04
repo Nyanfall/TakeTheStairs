@@ -12,8 +12,6 @@ public class ElevatorMovement : MonoBehaviour
    public float floorHeight = 5f;
 
    public AudioSource elevatorMusic;
-
-   public List <GameObject> doors = new List<GameObject>();
    
    private List <GameObject> _destinations = new List<GameObject>();
 
@@ -27,11 +25,6 @@ public class ElevatorMovement : MonoBehaviour
    {
       fisrtFloorPosition = transform.position;
       currentPositon = fisrtFloorPosition;
-      foreach (var door in doors)
-      {
-         door.GetComponent<Renderer>().enabled = false;
-         door.GetComponent<BoxCollider>().enabled = false;
-      }
    }
    
    public void ButtonIsPressed(GameObject destination)
@@ -75,22 +68,12 @@ public class ElevatorMovement : MonoBehaviour
       
       float dif = (end.y - start.y)/floorHeight;
       return CoroutineFactory.Create(move1FloorDuration*Math.Abs(dif), waitDelay, time =>
-      { 
-         foreach (var door in doors)
-         {
-            door.GetComponent<Renderer>().enabled = true;
-            door.GetComponent<BoxCollider>().enabled = true;
-         }
-         transform.position = Vector3.Lerp(start,end, time);
+      {
+         transform.position = Vector3.Lerp(start,end, time );
+         //transform.position = Vector3.up * Time.deltaTime;
          
       }, () =>
-      {
-         foreach (var door in doors)
-         {
-            door.GetComponent<Renderer>().enabled = false;
-            door.GetComponent<BoxCollider>().enabled = false;
-         }
-      },
+      { },
       () =>
       {
          running = false;
