@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace SloanKelly.GameLib
+namespace Coroutine.randomdudelib
 {
     /// <summary>
     /// Factory class to build coroutines using actions.

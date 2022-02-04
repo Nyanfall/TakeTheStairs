@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using SloanKelly.GameLib; //random dude coroutine library 
+using Coroutine.randomdudelib; //random dude coroutine library 
 
 public class ElevatorMovement : MonoBehaviour
 {
