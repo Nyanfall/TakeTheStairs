@@ -9,10 +9,11 @@ public class ElevatorMovement : MonoBehaviour
 {
    public float move1FloorDuration = 2.5f;
    public float waitDelay = 2f;
-   public float floorHeight = 5f;
 
-   public AudioSource elevatorMusic;
-   
+   public List<GameObject> _newDestinations = new List<GameObject>();
+
+   private float height;
+
    private List <GameObject> _destinations = new List<GameObject>();
 
    private Vector3 fisrtFloorPosition;
@@ -46,6 +47,20 @@ public class ElevatorMovement : MonoBehaviour
          MoveElevator();
       }
    }
+
+   public float GetHeight()
+   {
+      _newDestinations.OrderBy(go => go.transform.position.y).ToList();
+
+      foreach (var _newDestination in _newDestinations)
+      {
+         float allHeights;
+         allHeights =+ _newDestination.transform.position.y;
+         height = allHeights / _newDestinations.Count;
+      }
+      
+      return height;
+   }
    
    public void MoveElevator() 
    {
@@ -55,10 +70,6 @@ public class ElevatorMovement : MonoBehaviour
 
    private IEnumerator MoveElevator(List<GameObject> destinations) 
    {
-      if (!elevatorMusic.isPlaying)
-      {
-         elevatorMusic.Play();
-      }
       running = true;
       _destination = destinations.First(); 
       destinations.Remove(_destination);
@@ -66,23 +77,24 @@ public class ElevatorMovement : MonoBehaviour
       Vector3 start = new Vector3(fisrtFloorPosition.x, currentPositon.y, fisrtFloorPosition.z);
       Vector3 end = new Vector3(fisrtFloorPosition.x, _destination.transform.position.y, fisrtFloorPosition.z);
       
-      float dif = (end.y - start.y)/floorHeight;
+      float dif = (end.y - start.y)/GetHeight();
       return CoroutineFactory.Create(move1FloorDuration*Math.Abs(dif), waitDelay, time =>
       {
          transform.position = Vector3.Lerp(start,end, time );
          //transform.position = Vector3.up * Time.deltaTime;
          
       }, () =>
-      { },
+         {
+            //here doors are moving for future
+         },
       () =>
       {
          running = false;
-         currentPositon = new Vector3(fisrtFloorPosition.x,_destination.transform.position.y,fisrtFloorPosition.z);
+         currentPositon = new Vector3(fisrtFloorPosition.x,_destination.transform.position.y,fisrtFloorPosition.z); //update it with coroutine
          if (destinations.Count > 0)
          {
             StartCoroutine(MoveElevator(_destinations));
          }
-         else elevatorMusic.Stop();
       });
    }
 }
