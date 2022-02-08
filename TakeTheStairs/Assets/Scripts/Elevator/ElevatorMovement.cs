@@ -3,18 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using Coroutine.randomdudelib; //random dude coroutine library 
+using Coroutine.randomdudelib;
 
 public class ElevatorMovement : MonoBehaviour
 {
    public float move1FloorDuration = 2.5f;
    public float waitDelay = 2f;
 
-   public List<GameObject> _newDestinations = new List<GameObject>();
+   public List<GameObject> AllFloors = new List<GameObject>();
 
    private float height;
 
    private List <GameObject> _destinations = new List<GameObject>();
+   private List <int> floorsQue = new List<int>(); // is it need? 
 
    private Vector3 fisrtFloorPosition;
    private Vector3 currentPositon;
@@ -28,35 +29,39 @@ public class ElevatorMovement : MonoBehaviour
       currentPositon = fisrtFloorPosition;
    }
    
-   public void ButtonIsPressed(GameObject destination)
+   public void ButtonIsPressed(int floorNumber)
    {
-      if (!_destinations.Contains(destination))
+      floorsQue.Add(floorNumber); // is it need? 
+      GameObject nextFloor = AllFloors.ElementAt(floorNumber-1);
+      
+      if (!_destinations.Contains(nextFloor))
       {
-         _destinations.Add(destination);
-         //Debug.Log(_destination.name + " added to array of floors");
+         _destinations.Add(nextFloor);
+         //Debug.Log(nextFloor.name + " added to array of floors");
       }
-      if (destination.transform.position.y > currentPositon.y) //current position lie sometimes, need to make something in-between
+      if (nextFloor.transform.position.y > currentPositon.y)
       {
          _destinations = _destinations.OrderBy(go => go.transform.position.y).ToList();
          MoveElevator();
       }
-      else if (destination.transform.position.y < currentPositon.y)
+      else if (nextFloor.transform.position.y < currentPositon.y)
       {
          _destinations = _destinations.OrderBy(go => go.transform.position.y).ToList();
          _destinations.Reverse();
          MoveElevator();
       }
+
    }
 
    public float GetHeight()
    {
-      _newDestinations.OrderBy(go => go.transform.position.y).ToList();
+      AllFloors.OrderBy(go => go.transform.position.y).ToList();
 
-      foreach (var _newDestination in _newDestinations)
+      foreach (var floor in AllFloors)
       {
          float allHeights;
-         allHeights =+ _newDestination.transform.position.y;
-         height = allHeights / _newDestinations.Count;
+         allHeights =+ floor.transform.position.y;
+         height = allHeights / AllFloors.Count;
       }
       
       return height;

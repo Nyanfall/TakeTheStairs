@@ -771,8 +771,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e76fbc1f48439e54bb7db2f7691861e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinationPoint: {fileID: 136663991}
-  ElevatorMovement: {fileID: 1778351628}
+  floor: 2
+  ElevatorMovementReference: {fileID: 1778351628}
 --- !u!65 &537790217
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1822,8 +1822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e76fbc1f48439e54bb7db2f7691861e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinationPoint: {fileID: 1634102753}
-  ElevatorMovement: {fileID: 1778351628}
+  floor: 3
+  ElevatorMovementReference: {fileID: 1778351628}
 --- !u!65 &1233010185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2029,8 +2029,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e76fbc1f48439e54bb7db2f7691861e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinationPoint: {fileID: 1098542670}
-  ElevatorMovement: {fileID: 1778351628}
+  floor: 1
+  ElevatorMovementReference: {fileID: 1778351628}
 --- !u!65 &1267510310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2337,8 +2337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e76fbc1f48439e54bb7db2f7691861e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinationPoint: {fileID: 710259954}
-  ElevatorMovement: {fileID: 1778351628}
+  floor: 4
+  ElevatorMovementReference: {fileID: 1778351628}
 --- !u!65 &1565483229
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3384,17 +3384,41 @@ PrefabInstance:
     m_TransformParent: {fileID: 332165669}
     m_Modifications:
     - target: {fileID: 847383029, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: floor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 847383029, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
       propertyPath: destinationPoint
       value: 
       objectReference: {fileID: 1098542670}
+    - target: {fileID: 847383029, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: ElevatorMovementReference
+      value: 
+      objectReference: {fileID: 1778351628}
+    - target: {fileID: 1464706325, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: floor
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1464706325, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
       propertyPath: destinationPoint
       value: 
       objectReference: {fileID: 710259954}
+    - target: {fileID: 1464706325, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: ElevatorMovementReference
+      value: 
+      objectReference: {fileID: 1778351628}
+    - target: {fileID: 1685676462, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: floor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1685676462, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
       propertyPath: destinationPoint
       value: 
       objectReference: {fileID: 136663991}
+    - target: {fileID: 1685676462, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: ElevatorMovementReference
+      value: 
+      objectReference: {fileID: 1778351628}
     - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
       propertyPath: waitDelay
       value: 2
@@ -3416,6 +3440,46 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: AllFLoors.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: AllFloors.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: AllFLoors.Array.data[0]
+      value: 
+      objectReference: {fileID: 1098542670}
+    - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: AllFLoors.Array.data[1]
+      value: 
+      objectReference: {fileID: 136663991}
+    - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: AllFLoors.Array.data[2]
+      value: 
+      objectReference: {fileID: 1634102753}
+    - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: AllFLoors.Array.data[3]
+      value: 
+      objectReference: {fileID: 710259954}
+    - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: AllFloors.Array.data[0]
+      value: 
+      objectReference: {fileID: 1098542670}
+    - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: AllFloors.Array.data[1]
+      value: 
+      objectReference: {fileID: 136663991}
+    - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: AllFloors.Array.data[2]
+      value: 
+      objectReference: {fileID: 1634102753}
+    - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: AllFloors.Array.data[3]
+      value: 
+      objectReference: {fileID: 710259954}
+    - target: {fileID: 1778351628, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
       propertyPath: _newDestinations.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -3436,9 +3500,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 710259954}
     - target: {fileID: 2102991769, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: floor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2102991769, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
       propertyPath: destinationPoint
       value: 
       objectReference: {fileID: 1634102753}
+    - target: {fileID: 2102991769, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
+      propertyPath: ElevatorMovementReference
+      value: 
+      objectReference: {fileID: 1778351628}
     - target: {fileID: 2835744871109190604, guid: c1f855f5d40d477458d714b860a6857b, type: 3}
       propertyPath: m_Name
       value: Elevator
