@@ -1,56 +1,56 @@
 [
   {
     "Name": "Innokentij Vaskinson",
-    "StartTime": "2023-06-19T09:00:00",
-    "EndTime": "2023-06-19-23T10:00:00",
+    "StartTime": "2023-06-19T09:00:00.000+00:00",
+    "EndTime": "2023-06-19-23T10:00:00.000+00:00",
     "Description": "HairCut with monkeys",
     "Price": 150.0,
     "Currency": "$"
   },
   {
     "Name": "Will Smith",
-    "StartTime": "2023-06-19T10:15:00",
-    "EndTime": "2023-06-19T10:45:00",
+    "StartTime": "2023-06-19T10:15:00.000+00:00",
+    "EndTime": "2023-06-19T10:45:00.000+00:00",
     "Description": "HairCut without monkeys",
     "Price": 180.0,
     "Currency": "$"
   },
   {
     "Name": "Antonio Bendaris",
-    "StartTime": "2023-06-19T10:50:00",
-    "EndTime": "2023-06-19T11:45:00",
+    "StartTime": "2023-06-19T10:50:00.000+00:00",
+    "EndTime": "2023-06-19T11:45:00.000+00:00",
     "Description": "Hairstyle polish with a lot of text here",
     "Price": 250.0,
     "Currency": "$"
   },
   {
     "Name": "Julius Cezarson",
-    "StartTime": "2023-06-19T11:50:00",
-    "EndTime": "2023-06-19T13:00:00",
+    "StartTime": "2023-06-19T11:50:00.000+00:00",
+    "EndTime": "2023-06-19T13:00:00.000+00:00",
     "Description": "Butterfly on the neck",
     "Price": 80.0,
     "Currency": "$"
   },
   {
     "Name": "Omega Lulovich",
-    "StartTime": "2023-06-19T13:00:00",
-    "EndTime": "2023-06-19T14:30:00",
+    "StartTime": "2023-06-19T13:00:00.000+00:00",
+    "EndTime": "2023-06-19T14:30:00.000+00:00",
     "Description": "Nani?",
     "Price": 800.0,
     "Currency": "$"
   },
   {
     "Name": "Anatoliy Hermanovich",
-    "StartTime": "2023-06-20T11:50:00",
-    "EndTime": "2023-06-20T13:00:00",
+    "StartTime": "2023-06-20T11:50:00.000+00:00",
+    "EndTime": "2023-06-20T13:00:00.000+00:00",
     "Description": "Manicure with clean up",
     "Price": 48.20,
     "Currency": "$"
   },
   {
     "Name": "Thrall Ogrimarovcev",
-    "StartTime": "2023-06-20T13:00:00",
-    "EndTime": "2023-06-20T14:30:00",
+    "StartTime": "2023-06-20T13:00:00.000+00:00",
+    "EndTime": "2023-06-20T14:30:00.000+00:00",
     "Description": "Fix the haircut style",
     "Price": 10.99,
     "Currency": "$"
