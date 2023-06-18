@@ -1,0 +1,58 @@
+[
+  {
+    "Name": "Innokentij Vaskinson",
+    "StartTime": "06/19/23 09:00:00 AM",
+    "EndTime": "06/19/23 10:00:00 AM",
+    "Description": "HairCut with monkeys",
+    "Price": 150.0,
+    "Currency": "$"
+  },
+  {
+    "Name": "Will Smith",
+    "StartTime": "06/19/23 10:15:00 AM",
+    "EndTime": "06/19/23 10:45:00 AM",
+    "Description": "HairCut without monkeys",
+    "Price": 180.0,
+    "Currency": "$"
+  },
+  {
+    "Name": "Antonio Bendaris",
+    "StartTime": "06/19/23 10:50:00 AM",
+    "EndTime": "06/19/23 11:45:00 AM",
+    "Description": "Hairstyle polish with a lot of text here",
+    "Price": 250.0,
+    "Currency": "$"
+  },
+  {
+    "Name": "Julius Cezarson",
+    "StartTime": "06/19/23 11:50:00 AM",
+    "EndTime": "06/19/23 01:00:00 PM",
+    "Description": "Butterfly on the neck",
+    "Price": 80.0,
+    "Currency": "$"
+  },
+  {
+    "Name": "Omega Lulovich",
+    "StartTime": "06/19/23 01:00:00 PM",
+    "EndTime": "06/19/23 02:30:00 PM",
+    "Description": "Nani?",
+    "Price": 800.0,
+    "Currency": "$"
+  },
+  {
+    "Name": "Anatoliy Hermanovich",
+    "StartTime": "06/20/23 11:50:00 AM",
+    "EndTime": "06/20/23 01:00:00 PM",
+    "Description": "Manicure with clean up",
+    "Price": 48.20,
+    "Currency": "$"
+  },
+  {
+    "Name": "Thrall Ogrimarovcev",
+    "StartTime": "06/20/23 01:00:00 PM",
+    "EndTime": "06/20/23 02:30:00 PM",
+    "Description": "Fix the haircut style",
+    "Price": 10.99,
+    "Currency": "$"
+  }
+]
